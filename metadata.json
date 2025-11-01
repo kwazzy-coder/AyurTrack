@@ -1,0 +1,8 @@
+
+{
+  "name": "AyuTrace: Ayurvedic Herb Traceability",
+  "description": "A web application to track Ayurvedic herbs from farm to manufacturer, ensuring transparency and quality. Users can assume roles of Farmer, Collector, Lab Technician, or Manufacturer to interact with the supply chain.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

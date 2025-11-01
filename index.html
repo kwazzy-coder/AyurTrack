@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="AyurTrack: Ayurvedic Herb Traceability System"
+    />
+    <title>AyurTrack</title>
+    <!-- Fallback theme (used if Tailwind CDN fails to load) -->
+    <style id="theme-fallback">
+      :root {
+        --primary: #2E7D32; /* Darker Green */
+        --primary-focus: #1B5E20;
+        --secondary: #64DD17;
+        --accent: #FFC107;
+        --background: #F1F8E9;
+        --surface: #FFFFFF;
+        --text: #212121;
+        --text-secondary: #757575;
+      }
+      .bg-primary{ background-color: var(--primary) !important; }
+      .hover\:bg-primary-focus:hover{ background-color: var(--primary-focus) !important; }
+      .text-primary{ color: var(--primary) !important; }
+      .border-primary{ border-color: var(--primary) !important; }
+      .bg-background{ background-color: var(--background) !important; }
+      .bg-surface{ background-color: var(--surface) !important; }
+      .text-text{ color: var(--text) !important; }
+      .text-text-secondary{ color: var(--text-secondary) !important; }
+      .hover\:bg-primary\/10:hover{ background-color: rgba(46,125,50,0.10) !important; }
+      .focus\:ring-primary:focus{ box-shadow: 0 0 0 2px rgba(46,125,50,0.35) !important; }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2E7D32', // Darker Green
+              'primary-focus': '#1B5E20',
+              secondary: '#64DD17', // Lighter Green
+              accent: '#FFC107', // Amber
+              background: '#F1F8E9', // Very light green
+              surface: '#FFFFFF',
+              text: '#212121',
+              'text-secondary': '#757575',
+            },
+          },
+        },
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.552.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
+
